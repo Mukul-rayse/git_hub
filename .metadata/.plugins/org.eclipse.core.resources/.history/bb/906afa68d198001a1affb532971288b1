@@ -1,0 +1,52 @@
+package com.ebanking.master;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+
+
+public class SGrid 
+{
+   DesiredCapabilities cap=null;
+   @Test
+   public void Gd() throws MalformedURLException {
+   
+	   
+	 
+		   cap=new DesiredCapabilities();
+		   cap.setBrowserName("firefox");
+		   cap.setPlatform(Platform.WINDOWS);
+		    	
+    	
+	   
+	
+		   
+	
+	   
+	   RemoteWebDriver driver=new RemoteWebDriver(new URL("http://192.168.43.153:4444/wd/hub"),cap);
+	   
+	   driver.manage().window().maximize();
+		driver.get("http://183.82.100.55/ranford2");
+		
+		AdminHP AHP=PageFactory.initElements(driver, AdminHP.class);
+		AHP.Rol();
+		
+		NewRolpagePom NRP=PageFactory.initElements(driver, NewRolpagePom.class);
+		NRP.NR();
+		
+		RolCreationPom RCP=PageFactory.initElements(driver, RolCreationPom.class);
+		RCP.Rolecreation("Mukulking", "E");
+		
+		//Alert
+		driver.switchTo().alert().accept();
+		
+		NRP.Hm();
+   
+   }
+}

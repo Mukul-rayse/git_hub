@@ -1,0 +1,5 @@
+Role Name###Role Type###Result
+CashierAxisB###E$$$$Role Already existed
+CashierHdfcB###E$$$$Role Already existed
+CashieIciciB###E$$$$Role Already existed
+CashierSbiB###E$$$$Role Already existed

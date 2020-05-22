@@ -1,0 +1,5 @@
+Employer Name###Login Password###Role###Branch###Result
+mukul0011###mukul101###clerkaxis23###CORONA011
+mukul0022###mukul102###clerkaxis24###CORONA012
+mukul0033###mukul103###clerkaxis25###CORONA013
+mukul0044###mukul104###clerkaxis26###CORONA014
